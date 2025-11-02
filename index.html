@@ -7,6 +7,9 @@
 <meta name="description" content="Hour of Lust: an intimate, electrifying series of drag performances by House of Lust — bold, queer entertainment with heart and glitter.">
 <meta name="author" content="House of Lust">
 
+<!-- Custom Font: Pirata One for Logo -->
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+
 
 <!-- Bootstrap 5 CDN -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
@@ -36,13 +39,21 @@ min-height:60vh;display:flex;align-items:center;justify-content:center;text-alig
 .hero-content{position:relative;z-index:2;max-width:980px;}
 .brand-logotype{font-weight:700;letter-spacing:1px;color:var(--accent);}
 .card-quiet{background-color:#111;border:1px solid rgba(255,255,255,0.1);color:var(--text-main);}
-.gallery img{width:100%;height:220px;object-fit:cover;border-radius:8px;}
 footer{background:#0a0a0a;padding:2.5rem 1rem;font-size:0.95rem;border-top:1px solid rgba(255,255,255,0.05);color:var(--text);}
-h1,h2,h3,h4,h5{color:var(--text-main);}
+h1,h2,h3,h4,h5{font-family: 'Pirata One', cursive; color:var(--text-main); font-size: 2em; /* scales headings 50% bigger relative to their original size */}
 p,small,li{color:var(--text-muted);}
 a, .btn{transition:all 0.3s ease;}
 a.btn,button.btn{background:var(--accent);color:white;border:none;}
 a.btn:hover,button.btn:hover{background:#a00e18;}
+
+.gallery img {
+  width: 100%;
+  aspect-ratio: 3 / 4; /* Keeps consistent 3:4 portrait shape */
+  object-fit: cover;   /* Ensures the image fills the frame nicely */
+  border-radius: 8px;
+  display: block;
+}
+
 </style>
 </head>
 <body>
@@ -51,7 +62,10 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-3">
   <div class="container">
     <a class="navbar-brand d-flex align-items-center" href="#top">
-      <div class="me-2" style="width:42px;height:42px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#7b2cbf);display:flex;align-items:center;justify-content:center;font-weight:700;">L</div>
+      <div class="me-2" 
+     style="width:42px;height:42px;border-radius:8px;
+            background: linear-gradient(135deg,#a00e18, #270101);
+            display:flex;align-items:center;justify-content:center;font-weight:700;">L</div>
       <div>
         <div class="brand-logotype">House of Lust</div>
         <small style="color:var(--muted);display:block;margin-top:-4px;">Hour of Lust • Live Drag Series</small>
@@ -65,7 +79,7 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
     <div class="collapse navbar-collapse" id="navCollapse">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
         <li class="nav-item px-2"><a class="nav-link text-light" href="#about">About</a></li>
-        <li class="nav-item px-2"><a class="nav-link text-light" href="#shows">Shows</a></li>
+        <li class="nav-item px-2"><a class="nav-link text-light" href="#upcoming">Shows</a></li>
         <li class="nav-item px-2"><a class="nav-link text-light" href="#gallery">Gallery</a></li>
         <li class="nav-item px-2"><a class="nav-link text-light" href="#testimonials">Testimonials</a></li>
         <li class="nav-item px-2"><a class="nav-link text-light" href="#contact">Contact</a></li>
@@ -80,7 +94,7 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
   <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="6000">
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <div class="hero" style="background-image:url('https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1600&q=80');">
+        <div class="hero" style="background-image:url('images/carousel\ 1.JPG');">
           <div class="hero-content text-center">
             <h1 class="display-5 fw-bold">Hour of Lust</h1>
             <p class="lead mb-3" style="color:var(--muted);">An intimate, hour-long drag showcase: pulse, glamour, and storytelling — one act at a time.</p>
@@ -91,9 +105,9 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
       </div>
 
       <div class="carousel-item">
-        <div class="hero" style="background-image:url('https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=1600&q=80');">
+        <div class="hero" style="background-image:url('images/carousel\ 2.JPG');">
           <div class="hero-content">
-            <h2 class="fw-bold">Queer Cabaret, Reimagined</h2>
+            <h1 class="display-5 fw-bold">Queer Cabaret, Reimagined</h1>
             <p class="mb-3" style="color:var(--muted);">A rotating cast. New themes. One unforgettable hour.</p>
             <a href="#tickets" class="btn btn-lg" style="background:var(--accent); color:white;">Reserve a Seat</a>
           </div>
@@ -101,9 +115,9 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
       </div>
 
       <div class="carousel-item">
-        <div class="hero" style="background-image:url('https://images.unsplash.com/photo-1520975916267-8f0b8d9f6b60?auto=format&fit=crop&w=1600&q=80');">
+        <div class="hero" style="background-image:url('images/carousel\ 3.JPG');">
           <div class="hero-content">
-            <h2 class="fw-bold">Close-up. Bold. Real.</h2>
+            <h1 class="display-5 fw-bold">Close-up. Bold. Real.</h1>
             <p class="mb-3" style="color:var(--muted);">Stories told through makeup, music and movement. Immerse for an hour.</p>
             <a href="#contact" class="btn btn-lg btn-outline-light">Host an Event</a>
           </div>
@@ -124,41 +138,48 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
 
 <main class="container my-5">
 
-  <!-- About / Features -->
-  <section id="about" class="row align-items-center gy-4">
-    <div class="col-12 col-md-6">
-      <h3 class="neon-underline">What is Hour of Lust?</h3>
-      <p style="color:var(--muted);">Hour of Lust is a curated series of intimate drag performances produced by House of Lust. Each show pairs two or three performers for a tight, theatrical hour — a distilled experience built for emotion, spectacle and connection. We celebrate queerness, humor and the art of transformation.</p>
+<!-- About / Intro -->
 
-      <div class="row g-3 mt-3">
-        <div class="col-6">
-          <div class="card card-quiet p-3">
-            <h5 class="mb-1">45–60 min</h5>
-            <p class="small text mb-0">Concise, potent shows — perfect for late-night lineups.</p>
+<section id="about" class="my-5">
+  <div class="container">
+    <div class="row align-items-center gy-4">
+      
+      <!-- Text and Feature Cards Side by Side -->
+      <div class="col-12 col-md-6 d-flex flex-column justify-content-center">
+        <h1 class="display-5 fw-bold">What is Hour of Lust?</h1>
+        <p style="color:var(--muted);">
+          Hour of Lust is a curated series of intimate drag performances produced by House of Lust. 
+          Each show pairs two or three performers for a tight, theatrical set of performances — a distilled 
+          experience built for emotion, spectacle and connection. We celebrate queerness, humor and the art 
+          of transformation.
+        </p>
+      </div>
+
+      <div class="col-12 col-md-6">
+        <div class="row g-3">
+          <div class="col-6">
+            <div class="card card-quiet p-3 h-100 text-center">
+              <h5 class="mb-1">90-120 min</h5>
+              <p class="small text mb-0">Concise, potent shows — perfect for late-night lineups.</p>
+            </div>
           </div>
-        </div>
-        <div class="col-6">
-          <div class="card card-quiet p-3">
-            <h5 class="mb-1">Rotating Cast</h5>
-            <p class="small text mb-0">New themes and guest stars each month.</p>
+          <div class="col-6">
+            <div class="card card-quiet p-3 h-100 text-center">
+              <h5 class="mb-1">Rotating Cast</h5>
+              <p class="small text mb-0">New themes and guest stars each month.</p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="col-12 col-md-6 order-first order-md-last">
-      <div class="ratio ratio-16x9 shadow rounded">
-        <!-- Embedded video (example) -->
-        <iframe src="https://www.youtube.com/embed/ysz5S6PUM-U" title="Hour of Lust — showreel" allowfullscreen loading="lazy"></iframe>
-      </div>
     </div>
-  </section>
+  </div>
+</section>
 
 <!-- Cards / Lineup -->
 <section id="shows" class="my-5 py-4" style="padding-left: 8%; padding-right: 8%;">
   <div class="text-center mb-5">
-    <h3 class="mb-3">Lineup & Cards</h3>
-    <a href="#tickets" class="btn btn-sm" style="background:var(--accent);">Buy Tickets</a>
+    <h1 class="display-5 fw-bold">House of Lust Members</h1>
   </div>
 
   <div class="row justify-content-center g-4" style="max-width: 1000px; margin: 0 auto;">
@@ -170,7 +191,7 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
           <h5 class="card-title mb-1">Gazelleh</h5>
           <p class="card-text small text">A fierce storyteller mixing burlesque and satire.</p>
           <div class="mt-3 d-flex justify-content-between align-items-center">
-            <span class="badge bg-transparent border" style="color:var(--muted);">Mainstage</span>
+            <span class="badge bg-transparent border" style="color:var(--muted);">Co-Founder</span>
             <a href="#" class="btn btn-sm btn-outline-light">Read bio</a>
           </div>
         </div>
@@ -180,12 +201,12 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
     <!-- Performer 2 -->
     <div class="col-12 col-sm-6 col-lg-5">
       <article class="card card-quiet h-100">
-        <img src="images/ana sassin.PNG" class="card-img-top" alt="Performer Ana Sassin">
+        <img src="images/ana sassin.jpg" class="card-img-top" alt="Performer Ana Sassin">
         <div class="card-body">
           <h5 class="card-title mb-1">Ana Sassin</h5>
           <p class="card-text small text">High-energy lip syncs with sharper-than-velvet humor.</p>
           <div class="mt-3 d-flex justify-content-between align-items-center">
-            <span class="badge bg-transparent border" style="color:var(--muted);">Feature</span>
+            <span class="badge bg-transparent border" style="color:var(--muted);">Co-Founder</span>
             <a href="#" class="btn btn-sm btn-outline-light">Read bio</a>
           </div>
         </div>
@@ -195,13 +216,13 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
     <!-- Performer 3 -->
     <div class="col-12 col-sm-6 col-lg-5">
       <article class="card card-quiet h-100">
-        <img src="images/vander.PNG"
-             class="card-img-top" alt="Performer Vesper">
+        <img src="images/vander.jpg"
+             class="card-img-top" alt="Performer Van Der Ler">
         <div class="card-body">
           <h5 class="card-title mb-1">Van Der Ler</h5>
           <p class="card-text small text">Avant-garde performance and costume design.</p>
           <div class="mt-3 d-flex justify-content-between align-items-center">
-            <span class="badge bg-transparent border" style="color:var(--muted);">Guest</span>
+            <span class="badge bg-transparent border" style="color:var(--muted);">Member</span>
             <a href="#" class="btn btn-sm btn-outline-light">Read bio</a>
           </div>
         </div>
@@ -211,12 +232,12 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
     <!-- Performer 4 -->
     <div class="col-12 col-sm-6 col-lg-5">
       <article class="card card-quiet h-100">
-        <img src="images/judas.PNG" class="card-img-top" alt="Performer name">
+        <img src="images/judas.jpg" class="card-img-top" alt="Performer Judas">
         <div class="card-body">
           <h5 class="card-title mb-1">Judas</h5>
-          <p class="card-text small text">Describe their act here — glamour, emotion, or comedy.</p>
+          <p class="card-text small text">Raw, unique, pure representation of a drag king. </p>
           <div class="mt-3 d-flex justify-content-between align-items-center">
-            <span class="badge bg-transparent border" style="color:var(--muted);">Guest</span>
+            <span class="badge bg-transparent border" style="color:var(--muted);">Member</span>
             <a href="#" class="btn btn-sm btn-outline-light">Read bio</a>
           </div>
         </div>
@@ -228,7 +249,7 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
 
   <!-- Testimonials / Features -->
   <section id="testimonials" class="my-5">
-    <h3 class="mb-3">Features & Audience Love</h3>
+    <h1 class="display-5 fw-bold">Features & Audience Love</h1>
     <div class="row g-3">
       <div class="col-12 col-md-6">
         <div class="card card-quiet p-3">
@@ -248,21 +269,21 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
   <!-- Photo gallery -->
   <section id="gallery" class="my-5">
     <div class="d-flex justify-content-between align-items-center mb-3">
-      <h3>Gallery</h3>
-      <a href="#" class="small text-decoration-none" style="color:var(--muted);">See full gallery</a>
+      <h1 class="display-5 fw-bold">Gallery</h1>
+      <a href="gallery.html" class="small text-decoration-none" style="color:var(--muted);">See full gallery</a>
     </div>
 
     <div class="row g-3 gallery">
-      <div class="col-6 col-md-3"><img loading="lazy" src="https://images.unsplash.com/photo-1504198453319-5ce911bafcde?auto=format&fit=crop&w=800&q=60" alt="Stage lights and performer"></div>
-      <div class="col-6 col-md-3"><img loading="lazy" src="https://images.unsplash.com/photo-1513151233558-d860c5398176?auto=format&fit=crop&w=800&q=60" alt="Costume detail"></div>
-      <div class="col-6 col-md-3"><img loading="lazy" src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&fit=crop&w=800&q=60" alt="Audience clapping"></div>
-      <div class="col-6 col-md-3"><img loading="lazy" src="https://images.unsplash.com/photo-1517964103337-72b6d3b80c1f?auto=format&fit=crop&w=800&q=60" alt="Backstage mirror"></div>
+      <div class="col-6 col-md-3"><img loading="lazy" src="images/gallery 1.JPG" alt="6 local drag queens, black and white photo"></div>
+      <div class="col-6 col-md-3"><img loading="lazy" src="images/gallery 2.JPG" alt="Gazelleh, Metresa and Van Der Ler"></div>
+      <div class="col-6 col-md-3"><img loading="lazy" src="images/gallery 3.JPG" alt="Miss Ectomy"></div>
+      <div class="col-6 col-md-3"><img loading="lazy" src="images/gallery 4.JPG" alt="Ana Sassin and Gazelleh"></div>
     </div>
   </section>
 
   <!-- Carousel / Slider for press or upcoming themes -->
-  <section class="my-5">
-    <h3 class="mb-3">Upcoming Themes</h3>
+  <section id="upcoming" class="my-5">
+    <h1 class="display-5 fw-bold">Upcoming Themes</h1>
     <div id="themesCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#themesCarousel" data-bs-slide-to="0" class="active"></button>
@@ -300,47 +321,35 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
     </div>
   </section>
 
-  <!-- Contact / Tickets -->
-  <section id="contact" class="my-5">
-    <div class="row gy-3">
-      <div class="col-12 col-md-6">
-        <h3>Contact & Bookings</h3>
-        <p class="text small">Booking requests, press and accessibility needs: we respond within 48 business hours.</p>
-        <ul class="list-unstyled small text-muted">
-          <li><strong>Email:</strong> contact@houseoflust.example</li>
-          <li><strong>Phone:</strong> +40 700 000 000</li>
-          <li><strong>Location:</strong> Cluj Napoca (shows announced per event)</li>
-        </ul>
+<!-- Tickets -->
+<section id="tickets" class="my-5">
+  <div class="row gy-3">
+    <div class="col-12 col-md-8 mx-auto">
+      <h3 class="text-center mb-3">Join a Show</h3>
+      <p class="text small text-center mb-4" style="color:var(--muted);">
+        Tickets sell fast — intimate audience size keeps the energy electric. We offer general admission and limited VIP options.
+      </p>
 
-        <div class="mt-3">
-          <a href="#" class="btn btn-sm" style="background:var(--accent);">Request Booking</a>
-        </div>
-      </div>
-      <div class="col-12 col-md-6">
-        <h3 id="tickets">Join a show</h3>
-        <p class="text small">Tickets sell fast — intimate audience size keeps the energy electric. We offer general admission and limited VIP options.</p>
-
-        <div class="card card-quiet p-3">
-          <div class="d-flex justify-content-between align-items-center mb-2">
-            <div>
-              <h5 class="mb-0">General Admission</h5>
-              <small class="text">Standing / Seating mix</small>
-            </div>
-            <div class="text-end">
-              <div class="h5 mb-0">€12</div>
-              <small class="text">per person</small>
-            </div>
+      <div class="card card-quiet p-4 mx-auto" style="max-width:500px;">
+        <div class="d-flex justify-content-between align-items-center mb-2">
+          <div>
+            <h5 class="mb-0">General Admission</h5>
+            <small class="text">Standing / Seating mix</small>
           </div>
-          <a href="#" class="btn btn-sm btn-outline-light">Buy GA</a>
+          <div class="text-end">
+            <div class="h5 mb-0">50 RON</div>
+            <small class="text">per person</small>
+          </div>
         </div>
-
+        <a href="#" class="btn btn-sm btn-outline-light w-100 mt-2">Buy Ticket</a>
       </div>
     </div>
-  </section>
+  </div>
+</section>
 
   <!-- Countdown Section -->
 <section id="countdown" class="my-5 text-center">
-  <h3 class="mb-3">Next Show Countdown</h3>
+  <h1 class="display-5 fw-bold">Next Show Countdown</h1>
   <p class="text mb-4">Our next “Hour of Lust” begins soon — don’t miss it!</p>
   <div id="timer" class="display-6 fw-bold" style="color: var(--accent);"></div>
 </section>
@@ -367,15 +376,50 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
   }, 1000);
 </script>
 
+<!-- Map Section -->
+<section id="map" class="my-5">
+  <div class="container">
+    <div class="row align-items-center justify-content-center gy-4">
+      
+      <!-- Text -->
+      <div class="col-12 col-md-5 text-center text-md-start">
+        <h3 class="mb-3">Find Us</h3>
+        <p style="color: var(--text-muted);">
+          We perform at <strong>Casa Tranzit</strong>, one of Cluj’s most iconic independent art spaces.  
+          Step inside for an hour of glitter, emotion, and transformation.
+        </p>
+        <a href="https://goo.gl/maps/GFAVm5VRtfxX9FdT8" target="_blank" class="btn btn-sm" style="background: var(--accent); color: white;">
+          Get Directions
+        </a>
+      </div>
+
+      <!-- Map -->
+      <div class="col-12 col-md-6">
+        <div class="mapouter" style="position:relative; text-align:right; width:100%; height:400px;">
+          <div class="gmap_canvas" style="overflow:hidden; background:none!important; width:100%; height:100%; border-radius:12px;">
+            <iframe
+              width="100%" height="100%" style="border:0; border-radius:12px;"
+              allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed/v1/place?q=casa%20tranzit%20cluj%20napoca&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 </main>
 
 <!-- Footer -->
-<footer class="mt-auto">
+<footer class="mt-auto py-4">
   <div class="container">
-    <div class="row align-items-center">
-      <div class="col-12 col-md-6 mb-3 mb-md-0">
-        <div class="d-flex align-items-center">
-          <div style="width:46px;height:46px;border-radius:8px;background:linear-gradient(135deg,var(--accent),#7b2cbf);display:flex;align-items:center;justify-content:center;font-weight:700;">LUST</div>
+    <div class="row align-items-start gy-4">
+      <!-- Branding -->
+      <div class="col-12 col-md-4">
+        <div class="d-flex align-items-center mb-2">
+          <div style="width:46px;height:46px;border-radius:8px;background:linear-gradient(135deg,#a00e18, #270101);;display:flex;align-items:center;justify-content:center;font-weight:700;">L</div>
           <div class="ms-3">
             <div style="font-weight:700;color:var(--accent);">House of Lust</div>
             <small class="text">Hour of Lust • Live Drag Series</small>
@@ -383,11 +427,22 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
         </div>
       </div>
 
-      <div class="col-12 col-md-6 text-md-end">
+      <!-- Contact Info -->
+      <div class="col-12 col-md-4" id="contact">
+        <h6 class="text-uppercase mb-2" style="color:var(--accent);">Contact</h6>
+        <ul class="list-unstyled small text-muted mb-0">
+          <li><strong>Email:</strong> contact@houseoflust.example</li>
+          <li><strong>Phone:</strong> +40 700 000 000</li>
+          <li><strong>Location:</strong> Cluj-Napoca</li>
+        </ul>
+      </div>
+
+      <!-- Socials -->
+      <div class="col-12 col-md-4 text-md-end">
         <div class="mb-2 small text">Follow & stay tuned</div>
-        <a href="#" class="me-2 text-decoration-none" aria-label="Instagram"><i class="bi bi-instagram" style="font-size:1.2rem;color:#fff;"></i></a>
-        <a href="#" class="me-2 text-decoration-none" aria-label="Facebook"><i class="bi bi-facebook" style="font-size:1.2rem;color:#fff;"></i></a>
-        <a href="#" class="me-2 text-decoration-none" aria-label="Tiktok"><i class="bi bi-tiktok" style="font-size:1.2rem;color:#fff;"></i></a>
+        <a href="https://www.instagram.com/thehouroflust" class="me-2 text-decoration-none" aria-label="Instagram">
+          <i class="bi bi-instagram" style="font-size:1.2rem;color:#fff;"></i>
+        </a>
       </div>
     </div>
 

@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Gallery — Hour of Lust</title>
+<meta name="description" content="Gallery of performances, backstage moments, and live drag art from Hour of Lust by House of Lust.">
+<meta name="author" content="House of Lust">
+
+<!-- Custom Font: Pirata One for Logo -->
+<link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+
+<!-- Bootstrap 5 CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+
+<!-- Bootstrap Icons -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+<style>
+:root{
+  --accent:#c1121f;
+  --dark:#000000;
+  --text-main:#f5f5f5;
+  --text-muted:#eddfdf;
+}
+body{
+  background-color:var(--dark);
+  color:var(--text-main);
+  font-family:'Segoe UI',Roboto,system-ui,-apple-system,'Helvetica Neue',Arial;
+}
+h1,h2,h3,h4,h5{font-family: 'Pirata One', cursive; color:var(--text-main); font-size: 2em; }
+p,small,li{color:var(--text-muted);}
+a{color:var(--accent);text-decoration:none;}
+a:hover{color:#a00e18;}
+.navbar-dark .navbar-brand,
+.navbar-dark .nav-link { color: var(--text-main) !important; }
+.navbar-dark .nav-link:hover { color: var(--accent) !important; }
+
+.gallery-grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:1rem;
+  padding:2rem 0;
+}
+.gallery-grid img{
+  width:100%;
+  aspect-ratio:3/4; /* portrait ratio */
+  object-fit:cover;
+  border-radius:8px;
+  transition:transform 0.3s ease, box-shadow 0.3s ease;
+}
+.gallery-grid img:hover{
+  transform:scale(1.05);
+  box-shadow:0 0 30px rgb(203, 4, 18);
+}
+
+footer{
+  background:#0a0a0a;
+  padding:2.5rem 1rem;
+  border-top:1px solid rgba(255,255,255,0.05);
+  font-size:0.9rem;
+  color:var(--text-muted);
+}
+</style>
+</head>
+<body>
+
+<!-- Navigation (copied from index.html) -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-3">
+  <div class="container">
+    <a class="navbar-brand d-flex align-items-center" href="index.html#top">
+      <div class="me-2" style="width:42px;height:42px;border-radius:8px;background:linear-gradient(135deg,#a00e18, #270101);;display:flex;align-items:center;justify-content:center;font-weight:700;">L</div>
+      <div>
+        <div class="brand-logotype" style="font-weight:700;letter-spacing:1px;color:var(--accent);">House of Lust</div>
+        <small style="color:var(--text-muted);display:block;margin-top:-4px;">Hour of Lust • Live Drag Series</small>
+      </div>
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navCollapse">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
+        <li class="nav-item px-2"><a class="nav-link text-light" href="index.html#about">About</a></li>
+        <li class="nav-item px-2"><a class="nav-link text-light" href="index.html#shows">Shows</a></li>
+        <li class="nav-item px-2"><a class="nav-link active text-light" href="gallery.html">Gallery</a></li>
+        <li class="nav-item px-2"><a class="nav-link text-light" href="index.html#testimonials">Testimonials</a></li>
+        <li class="nav-item px-2"><a class="nav-link text-light" href="index.html#contact">Contact</a></li>
+      </ul>
+      <a href="index.html#tickets" class="btn btn-sm ms-3" style="background:var(--accent); color:white;">Buy Tickets</a>
+    </div>
+  </div>
+</nav>
+
+<!-- Hero -->
+<header class="text-center py-5 bg-black border-bottom border-secondary">
+  <div class="container">
+    <h1 class="display-5 fw-bold" style="color:var(--accent);">Gallery</h1>
+    <p class="lead text mb-0">Moments that shimmer, lips that sync, hearts that roar.</p>
+  </div>
+</header>
+
+<!-- Gallery -->
+<main class="container my-5">
+  <div class="gallery-grid">
+    <img src="images/gallery 1.JPG" alt="6 local drag queens, black and white photo">
+    <img src="images/gallery 2.JPG" alt="Gazelleh, Metresa and Van Der Ler">
+    <img src="images/gallery 3.JPG" alt="Miss Ectomy">
+    <img src="images/gallery 4.JPG" alt="Ana Sassin and Gazelleh">
+    <img src="images/gallery 5.JPG" alt="Ana Sassin, Gazelleh and Van Der Ler">
+    <img src="images/gallery 6.JPG" alt="Judas performing">
+    <img src="images/gallery 7.JPG" alt="Winona Serapheme performing">
+    <img src="images/gallery 8.PNG" alt="Origin Of Love event poster">
+  </div>
+</main>
+
+<!-- Footer -->
+<footer class="mt-auto py-4">
+  <div class="container">
+    <div class="row align-items-start gy-4">
+      <!-- Branding -->
+      <div class="col-12 col-md-4">
+        <div class="d-flex align-items-center mb-2">
+          <div style="width:46px;height:46px;border-radius:8px;background:linear-gradient(135deg,#a00e18, #270101);;display:flex;align-items:center;justify-content:center;font-weight:700;">L</div>
+          <div class="ms-3">
+            <div style="font-weight:700;color:var(--accent);">House of Lust</div>
+            <small class="text">Hour of Lust • Live Drag Series</small>
+          </div>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="col-12 col-md-4" id="contact">
+        <h6 class="text-uppercase mb-2" style="color:var(--accent);">Contact</h6>
+        <ul class="list-unstyled small text-muted mb-0">
+          <li><strong>Email:</strong> contact@houseoflust.example</li>
+          <li><strong>Phone:</strong> +40 700 000 000</li>
+          <li><strong>Location:</strong> Cluj-Napoca</li>
+        </ul>
+      </div>
+
+      <!-- Socials -->
+      <div class="col-12 col-md-4 text-md-end">
+        <div class="mb-2 small text">Follow & stay tuned</div>
+        <a href="https://www.instagram.com/thehouroflust" class="me-2 text-decoration-none" aria-label="Instagram">
+          <i class="bi bi-instagram" style="font-size:1.2rem;color:#fff;"></i>
+        </a>
+      </div>
+    </div>
+
+    <div class="row mt-3">
+      <div class="col-12 text-center small text">© <span id="year"></span> House of Lust — All original content.</div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script>
+
+</body>
+</html>
