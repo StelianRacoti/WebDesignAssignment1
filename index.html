@@ -61,21 +61,30 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark bg-transparent py-3">
   <div class="container">
-    <a class="navbar-brand d-flex align-items-center" href="#top">
-      <div class="me-2" 
-     style="width:42px;height:42px;border-radius:8px;
-            background: linear-gradient(135deg,#a00e18, #270101);
-            display:flex;align-items:center;justify-content:center;font-weight:700;">L</div>
-      <div>
-        <div class="brand-logotype">House of Lust</div>
-        <small style="color:var(--muted);display:block;margin-top:-4px;">Hour of Lust • Live Drag Series</small>
-      </div>
-    </a>
+    <!-- Brand + Hamburger grouped together -->
+    <div class="d-flex justify-content-between align-items-center w-100">
+      <!-- Logo + Text -->
+      <a class="navbar-brand d-flex align-items-center" href="#top">
+        <div class="me-2" 
+          style="width:42px;height:42px;border-radius:8px;
+                 background: linear-gradient(135deg,#a00e18, #270101);
+                 display:flex;align-items:center;justify-content:center;
+                 font-weight:700;">L</div>
+        <div>
+          <div class="brand-logotype">House of Lust</div>
+          <small style="color:var(--muted);display:block;margin-top:-4px;">
+            Hour of Lust • Live Drag Series
+          </small>
+        </div>
+      </a>
 
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+      <!-- Hamburger Menu (only on mobile) -->
+      <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#navCollapse" aria-controls="navCollapse" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
 
+    <!-- Collapsible Navigation Links -->
     <div class="collapse navbar-collapse" id="navCollapse">
       <ul class="navbar-nav ms-auto mb-2 mb-lg-0 align-items-lg-center">
         <li class="nav-item px-2"><a class="nav-link text-light" href="#about">About</a></li>
@@ -88,6 +97,7 @@ a.btn:hover,button.btn:hover{background:#a00e18;}
     </div>
   </div>
 </nav>
+
 
 <!-- Hero / Carousel -->
 <header id="top">
